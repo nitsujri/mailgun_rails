@@ -38,8 +38,8 @@ Dummy::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
+  config.action_mailer.delivery_method = :mailgun_rails
+  config.action_mailer.mailgun_rails_settings = {
       api_key: ENV['ACTION_MAILER_API_KEY'],
       domain: 'ACTION_MAILER_DOMAIN'
   }
